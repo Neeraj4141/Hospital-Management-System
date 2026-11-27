@@ -15,7 +15,7 @@ public class Appointment {
 	private long id;
 	private String name;
 	private String age;
-	private String symtoms;
+	private String symptoms;
 	private String number;
 	public long getId() {
 		return id;
@@ -35,11 +35,11 @@ public class Appointment {
 	public void setAge(String age) {
 		this.age = age;
 	}
-	public String getSymtoms() {
-		return symtoms;
+	public String getSymptoms() {
+		return symptoms;
 	}
-	public void setSymtoms(String symtoms) {
-		this.symtoms = symtoms;
+	public void setSymptoms(String symptoms) {
+		this.symptoms = symptoms;
 	}
 	public String getNumber() {
 		return number;

@@ -23,12 +23,12 @@ public class AppointmentCTL {
 		this.appointmentRepository = appointmentRepository;
 	}
 
-	@PostMapping("/insert")
+	@PostMapping("/appointments")
 	public Appointment createAppointment(@RequestBody Appointment appointment) {
 		return appointmentRepository.save(appointment);
 	}
 
-	@GetMapping
+	@GetMapping("/appointments")
 	public List<Appointment> getAllAppointments() {
 		return appointmentRepository.findAll();
 	}
